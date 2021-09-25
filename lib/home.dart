@@ -8,6 +8,8 @@ class FirstScreen extends StatefulWidget {
 
 class _FirstScreenState extends State<FirstScreen> {
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +45,7 @@ class _FirstScreenState extends State<FirstScreen> {
 
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) =>  LoginScreen()),
+                          MaterialPageRoute(builder: (context) =>  LoginScreen(n: 0, )),
                         );
                     //Go to login screen.
                   },
@@ -66,6 +68,10 @@ class _FirstScreenState extends State<FirstScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to registration screen.
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>  LoginScreen(n: 1, )),
+                    );
                   },
                   minWidth: 200.0,
                   height: 42.0,
@@ -85,6 +91,10 @@ class _FirstScreenState extends State<FirstScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to registration screen.
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) =>  LoginScreen(n: 3, )),
+                    );
                   },
                   minWidth: 200.0,
                   height: 42.0,

@@ -12,7 +12,7 @@ class _DashboardState extends State<Dashboard> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(backgroundColor: Colors.blue,),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.lightBlueAccent,
         body: SafeArea(
           child: Center(
             child: Column(
@@ -26,7 +26,7 @@ class _DashboardState extends State<Dashboard> {
                 Text('Welcome Admin!',
                 style: TextStyle(
                   fontSize: 40.0,
-                  color: Colors.black,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
 
                 ),

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-class Dashboard extends StatefulWidget {
+class Dashboardm extends StatefulWidget {
 
 
   @override
-  _DashboardState createState() => _DashboardState();
+  _DashboardmState createState() => _DashboardmState();
 }
 
-class _DashboardState extends State<Dashboard> {
+class _DashboardmState extends State<Dashboardm> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
           appBar: AppBar(backgroundColor: Colors.red,),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.redAccent,
           body: SafeArea(
             child: Center(
               child: Column(
@@ -26,7 +26,7 @@ class _DashboardState extends State<Dashboard> {
                   Text('Welcome Manager!',
                     style: TextStyle(
                       fontSize: 40.0,
-                      color: Colors.black,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
 
                     ),

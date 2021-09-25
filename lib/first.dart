@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:login/dashboard1.dart';
+import 'package:login/dashboard2.dart';
 import 'dashboard.dart';
 
+
 class LoginScreen extends StatefulWidget {
+  final int n;
+
+  LoginScreen({Key key, @required this.n}) : super(key: key);
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -64,10 +70,25 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             MaterialButton(
               onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) =>  Dashboard()),
-                );
+                if(widget.n==0) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Dashboard()),
+                  );
+                }
+                else
+                  if(widget.n==1){
+
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Dashboardm()),
+                    );
+                  }else{
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Dashboardu()),
+                    );
+                  }
               },
               child: Container(
                 margin: EdgeInsets.symmetric(
@@ -92,6 +113,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   Center(
                     child: InkWell(
                       onTap: () {
+
+
 
 
                       },
